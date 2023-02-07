@@ -1,0 +1,134 @@
+@import url(https://cdn.mos.cms.futurecdn.net/2NBcYamXxLpvA77ciPfKZW-1024-80.jpg);
+
+* {
+    padding: 50;
+    box-sizing: content-box;
+    font-family: 'sans-serif';
+}
+
+body {
+    background-color: rgb(182, 182, 182);
+}
+
+.main-content {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 15% 85%;
+}
+
+
+.left-side {
+    background: rgb(104, 103, 103);
+    min-width: 15%;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    overflow: auto;
+    display: block;
+}
+
+.content {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+
+.profileText {
+    padding-bottom: 10px;
+    font-size: small;
+}
+
+.profileText .imgBx {
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    border-radius: 28px;
+    padding: 15px;
+}
+
+.profileText .imgBx img {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profileText h2 {
+    color: #000000;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: right;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.profileText h2 span {
+    font-size: 0.8em;
+    font-weight: 500;
+}
+
+.ContactInfo {
+    padding-top: 100px;
+}
+
+.title {
+    color: #003147;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 1px;
+    font-size: medium;
+}
+
+.title2 {
+    color: #003147;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0px;
+    font-size: large;
+}
+
+.ContactInfo ul {
+    position: relative;
+}
+
+.ContactInfo ul li {
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+}
+
+.ContactInfo ul li span {
+    font-weight: 200;
+}
+
+.ContactInfo.education li {
+    margin-bottom: 15px;
+}
+
+.ContactInfo.education h2 {
+    font-weight: 800;
+    font-size: medium;
+}
+
+.ContactInfo.education h2:nth-child(2) {
+    font-weight: 800;
+    font-size: medium;
+}
+
+.ContactInfo.education h2 {
+    font-weight: 800;
+    font-size: medium;
+}
+
+.about:last-child {
+    margin-bottom: auto;
+}
+
+@media screen and (max-width: 992px) {
+    .main-content {
+        display: block;
+        height: 100%;
+    }
+}
